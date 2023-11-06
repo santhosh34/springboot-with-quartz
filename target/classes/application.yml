@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: quartz-scheduler
+  datasource:
+    url: jdbc:mariadb://127.0.0.1:3307/quartzdb
+    username: admin
+    password: password
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+        ddl-auto: none
+  liquibase:
+    user: admin
+    password: password
+    change-log: classpath:db/changelog/db.changelog-master.xml
