@@ -8,9 +8,7 @@
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
 
-    <include file="db/changelog/migration/change-log-v1.0.sql"/>
-    <include file="db/changelog/migration/change-log-v2.0.sql"/>
-    <include file="db/changelog/migration/change-log-v3.0.sql"/>
-    <include file="db/changelog/migration/change-log-v4.0.sql"/>
+    <include file="db/changelog/migration/change-log-quartz-v1.0.sql"/>
+
 
 </databaseChangeLog>

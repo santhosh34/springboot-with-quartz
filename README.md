@@ -88,3 +88,10 @@
 ref: https://hub.docker.com/_/mariadb  & https://stackoverflow.com/questions/41645309/mysql-error-access-denied-for-user-rootlocalhost
 
 ##  Spring Boot Application Setup
+
+## Quartz tables has to be created 
+Run the following schema to create tables using liquibase:
+
+    https://github.com/quartz-scheduler/quartz/blob/main/quartz/src/main/resources/org/quartz/impl/jdbcjobstore/tables_mysql_innodb.sql
+
+![ER Diagram of Quartz Tables for RDBMS](docs/images/quartz-table-entity-relationship.png)
